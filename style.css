@@ -1,0 +1,145 @@
+body {
+    background: rgb(41, 0, 99);
+    background: radial-gradient(circle, rgba(41, 0, 99, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    margin: 0;
+}
+
+.player-wrap {
+    width: 600px;
+    background-color: black;
+    border-radius: 30px;
+    margin: 100px auto;
+    padding: 20px;
+    display: flex;
+    justify-content: end;
+    position: relative;
+}
+
+.player {
+    width: 65%;
+}
+
+.img {
+    float: left;
+    position: absolute;
+    left: -15%;
+    top: -15%;
+    width: 276px;
+    height: 276px;
+    border-radius: 50%;
+    z-index: 10000;
+    border: 10px black solid;
+    background-size: cover;
+}
+
+.spin_animation {
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear infinite;
+    animation-play-state: paused;
+}
+
+
+@-moz-keyframes spin {
+    100% {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    100% {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+}
+
+
+h1 {
+    font-family: verdana;
+    color: #bebebe;
+    font-size: x-large;
+    margin: 2px 2px;
+}
+
+h3 {
+    font-family: courier;
+    color: rgba(190, 190, 190, 0.4);
+    font-size: large;
+    margin: 2px 2px;
+}
+
+
+.controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#time,
+#duration {
+    z-index: 11;
+    top: 50%;
+    font-size: 11px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #ddd;
+    margin: 10px 2px;
+}
+
+.play-icon {
+    height: 20px;
+    width: 20px;
+    background: rgb(70, 0, 162);
+    border-radius: 50%;
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    -webkit-user-select: none; /* Safari */
+    user-select: none; /* Standard syntax */
+}
+
+.play-icon:hover {
+    background-color: rgba(50, 0, 126, 0.9);
+    cursor: pointer;
+}
+
+/*prev and next*/
+.next-icon, .prev-icon {
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.player-icon:hover > path {
+    fill: rgb(255, 255, 255);
+}
+.player-icon:hover {
+    cursor: pointer;
+}
+
+.backward, .forward {
+    height: 20px;
+    width: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+
+.time_line {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: -10px;
+}
+
+
+
+
+
