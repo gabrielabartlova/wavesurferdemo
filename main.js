@@ -8,19 +8,19 @@ const playlist = [
     album: 'cover1.jpg',
     title: 'Never Hide',
     artist: 'Wolsh',
-    audio: 'audio1.wav'
+    audio: 'audio1.mp3'
   },
   {
     album: 'cover2.jpg',
     title: 'Watching Anime',
     artist: 'Odd Future',
-    audio: 'audio2.wav'
+    audio: 'audio2.mp3'
   },
   {
     album: 'cover3.jpg',
     title: 'Crying In Your Sleep',
     artist: 'Raxeller',
-    audio: 'audio3.wav'
+    audio: 'audio3.mp3'
   }
 ]
 

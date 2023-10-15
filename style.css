@@ -17,8 +17,10 @@ body {
 
 .player {
     width: 65%;
+    padding-right: 10px;
 }
 
+/*  album cover  */
 .cover {
     float: left;
     position: absolute;
@@ -59,7 +61,7 @@ body {
     }
 }
 
-
+/*  song name   */
 h1 {
     font-family: verdana;
     color: #bebebe;
@@ -67,6 +69,7 @@ h1 {
     margin: 2px 2px;
 }
 
+/*  artist  */
 h3 {
     font-family: courier;
     color: rgba(190, 190, 190, 0.4);
